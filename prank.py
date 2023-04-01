@@ -5,11 +5,11 @@ import pyautogui
 
 OS = platform.system()
 if OS == "macOS":
-    edge_path="C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
+    safari_path="/Applications/Safari.app"
 
-    webbrowser.register("edge", None, webbrowser.BackgroundBrowser(edge_path))
+    webbrowser.register("safari", None, webbrowser.BackgroundBrowser(safari_path))
 
-    webbrowser.get("edge").open("https://updatefaker.com/osx/index.html")
+    webbrowser.get("safari").open("https://updatefaker.com/osx/index.html")
 
 elif OS == "Windows":
     ver = platform.release()
