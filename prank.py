@@ -1,7 +1,6 @@
-from time import sleep
+import time
 import webbrowser
 import platform
-import pyautogui
 import pyautogui
 
 OS = platform.system()
@@ -20,7 +19,7 @@ elif OS == "Windows":
 
         webbrowser.register("edge", None, webbrowser.BackgroundBrowser(edge_path))
         webbrowser.get("edge").open("https://updatefaker.com/windows10/index.html")
-        sleep(5)
+        time.sleep(5)
         pyautogui.press("f11")
         time.sleep(0.5)
         pyautogui.press("tab")
@@ -37,7 +36,7 @@ elif OS == "Windows":
         webbrowser.register("edge", None, webbrowser.BackgroundBrowser(edge_path))
 
         webbrowser.get("edge").open("https://updatefaker.com/windows11/index.html")
-        sleep(5)
+        time.sleep(5)
         pyautogui.press("f11")
         time.sleep(0.5)
         pyautogui.press("tab")
@@ -47,3 +46,4 @@ elif OS == "Windows":
         pyautogui.press("tab")
         time.sleep(0.5)
         pyautogui.press("enter")
+        webbrowser.get("edge").open("https://updatefaker.com/windows11/index.html")
