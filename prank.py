@@ -29,6 +29,11 @@ elif OS == "Windows":
         pyautogui.press("tab")
         time.sleep(0.5)
         pyautogui.press("enter")
+        
+        pyautogui.keyDown("alt")
+        pyautogui.keyDown("right")
+        pyautogui.keyUp("alt")
+        pyautogui.keyUp("right")
     
     elif ver == "11":
         edge_path="C:\Program Files (x86)\Microsoft\Edge\Application\msedge.exe"
@@ -46,4 +51,8 @@ elif OS == "Windows":
         pyautogui.press("tab")
         time.sleep(0.5)
         pyautogui.press("enter")
-        webbrowser.get("edge").open("https://updatefaker.com/windows11/index.html")
+
+        pyautogui.keyDown("alt")
+        pyautogui.keyDown("right")
+        pyautogui.keyUp("alt")
+        pyautogui.keyUp("right")
